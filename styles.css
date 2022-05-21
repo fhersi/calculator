@@ -31,6 +31,8 @@ body {
 
 button {
 	flex: 1 1 auto;
+	font-size: 20px;
+	padding: 0;
 }
 
 .display {
@@ -40,4 +42,8 @@ button {
 
 .display-div {
 	justify-content: center;
+}
+
+span {
+	font-size: 60px;
 }
