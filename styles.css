@@ -1,0 +1,43 @@
+html,
+body {
+	height: 100%;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: ghostwhite;
+}
+
+.flex-container-1 {
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+}
+
+.flex-container-2 {
+	height: 600px;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	background-color: grey;
+}
+.child-div {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+button {
+	flex: 1 1 auto;
+}
+
+.display {
+	flex: 1 1 auto;
+	background-color: grey;
+}
+
+.display-div {
+	justify-content: center;
+}
