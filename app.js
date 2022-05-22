@@ -11,6 +11,7 @@ const operators = document.querySelectorAll("button.operator");
 const btnClear = document.querySelector("button.clear");
 const btnInvert = document.querySelector("button.invert");
 const btnDecimal = document.querySelector("button.decimal");
+const btnPercentage = document.querySelector("button.percentage");
 // mapping buttons to function references.
 
 const dict = {
@@ -106,9 +107,14 @@ function decimal() {
 	display.innerText += ".";
 }
 
+function percentage() {
+	display.innerText = parseFloat(display.innerText) / 100;
+}
+
 btnClear.addEventListener("click", clearDisplay);
 btnDecimal.addEventListener("click", decimal);
 btnInvert.addEventListener("click", inverse);
+btnPercentage.addEventListener("click", percentage);
 
 Array.from(operators).map((operator) => {
 	//console.log(`Triggered ${operator.innerText}`);
